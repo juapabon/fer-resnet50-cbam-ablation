@@ -1,5 +1,7 @@
 # CBAM, focal loss and MixUp on ResNet-50 for facial expression recognition: multi-seed ablation and near-duplicate audit
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24357375.svg)](https://doi.org/10.5281/zenodo.24357375)
+
 Code, results and per-image predictions accompanying the article
 
 > Pabón Alajo, J. F., Curto Diego, M. B., & Moreno Rodilla, V. *Do CBAM attention, focal loss and MixUp improve facial expression recognition with ResNet-50? A multi-seed ablation with a validated near-duplicate audit, deduplicated retraining and cross-dataset evaluation.* Submitted to Frontiers.
@@ -17,7 +19,7 @@ Run groups: `runs` (9 configurations × seeds 42–46), `runs_dedup` (deduplicat
 
 ## Data
 
-The images of FER2013 and RAF-DB are **not** redistributed. Paths in the CSV files are relative to the dataset root (`FER2013/<split>/<class>/<file>`, `RAF-DB/<split>/<code>/<file>`). FER2013 is available from the ICML 2013 challenge (Goodfellow et al., 2015); RAF-DB from its authors for non-commercial research (Li et al., 2017). The model weights (`best.pth` of every run) are deposited in the Zenodo record of this repository.
+The images of FER2013 and RAF-DB are **not** redistributed. Paths in the CSV files are relative to the dataset root (`FER2013/<split>/<class>/<file>`, `RAF-DB/<split>/<code>/<file>`). FER2013 is available from the ICML 2013 challenge (Goodfellow et al., 2015); RAF-DB from its authors for non-commercial research (Li et al., 2017). The model weights (`best.pth` of every run) are deposited in the Zenodo record of this repository (https://doi.org/10.5281/zenodo.24357375).
 
 ## Reproducing
 
