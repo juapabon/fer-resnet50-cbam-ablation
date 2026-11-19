@@ -1,0 +1,34 @@
+{
+  "iteraciones": 2000,
+  "pares": 360,
+  "duplicados_confirmados": 147,
+  "regla_mas_elegida": "dHash<=10 & pHash<=10",
+  "pct_mas_elegida": 52.2,
+  "pct_elige_regla_articulo": 7.1,
+  "seleccionada_prec_eval_p2_5_mediana_p97_5": [
+    0.8841675126497178,
+    0.9520897832817338,
+    1.0
+  ],
+  "seleccionada_rec_eval": [
+    0.7898682221987268,
+    0.8967413733135987,
+    0.9832865345967992
+  ],
+  "seleccionada_test_flagged": [
+    647.0,
+    887.0,
+    887.0
+  ],
+  "regla_articulo_prec_eval": [
+    0.9744705539708861,
+    0.9801736663407349,
+    1.0
+  ],
+  "regla_articulo_rec_eval": [
+    0.7861449526801584,
+    0.8627285962441561,
+    0.9471708429252705
+  ],
+  "regla_articulo_test_flagged": 647
+}

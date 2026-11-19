@@ -1,0 +1,16 @@
+\begin{table}[ht]
+\centering
+\small
+\caption{Test performance. Exact McNemar TTA vs. no TTA: b=112, c=80, p=0.0250. Paired bootstrap ($B$=10000) $\Delta$acc=0.0089 [0.0014, 0.0164], $\Delta$macro-F1=0.0104 [-0.0013, 0.0225].}
+\label{tab:global}
+\begin{tabular}{lrrrrrrr}
+\toprule
+Setting & Accuracy [95\% CI] & Macro P & Macro R & Macro F1 & Macro F2 & Weighted F1 & n \\
+\midrule
+No TTA & 0.671 [0.656, 0.686] & 0.694 & 0.635 & 0.656 & 0.642 & 0.669 & 3595 \\
+3-view TTA & 0.680 [0.665, 0.695] & 0.701 & 0.647 & 0.667 & 0.654 & 0.678 & 3595 \\
+No TTA (deduplicated test) & 0.659 [0.642, 0.675] & 0.675 & 0.613 & 0.634 & 0.620 & 0.656 & 3283 \\
+3-view TTA (deduplicated test) & 0.666 [0.650, 0.682] & 0.681 & 0.620 & 0.641 & 0.627 & 0.663 & 3283 \\
+\bottomrule
+\end{tabular}
+\end{table}

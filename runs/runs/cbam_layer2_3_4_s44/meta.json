@@ -1,0 +1,22 @@
+{
+  "variant": "cbam_layer2_3_4",
+  "seed": 44,
+  "spec": {
+    "cbam": [
+      "layer2",
+      "layer3",
+      "layer4"
+    ],
+    "loss": "focal",
+    "mixup": true
+  },
+  "epochs_run": 112,
+  "best_epoch": 97,
+  "best_val_f1": 0.6733642266481413,
+  "train_time_s": 29415.26198029518,
+  "sec_per_epoch": 262.63626768120696,
+  "test_infer_time_tta_s": 25.916787147521973,
+  "peak_gpu_mem_gb": 0.9686870574951172,
+  "trainable_params_final": 23809325,
+  "run_dir": "WORK_DIR/runs/cbam_layer2_3_4_s44"
+}

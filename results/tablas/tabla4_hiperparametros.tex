@@ -1,0 +1,24 @@
+\begin{table}[ht]
+\centering
+\small
+\caption{Training hyperparameters.}
+\label{tab:hyperparameters}
+\begin{tabular}{ll}
+\toprule
+Hyperparameter & Value \\
+\midrule
+Input size & 224x224, grayscale replicated to 3 channels \\
+Batch size & 32 \\
+Max epochs / early-stopping patience & 1000 / 15 (val macro-F1) \\
+Optimizer & AdamW, weight decay 0.0001 \\
+LR scheduler & ReduceLROnPlateau (factor 0.5, patience 4) \\
+Focal loss gamma & 2.0 \\
+MixUp alpha / probability & 0.3 / 1.0 \\
+Dropout (head) & 0.5 / 0.4 \\
+CBAM reduction / kernel & 16 / 7 \\
+Stage 1 (from epoch 1): LR & cbam 0.0001, head 0.0003 \\
+Stage 2 (from epoch 11): LR & layer4 1e-05, cbam 5e-05, head 0.0001 \\
+Stage 3 (from epoch 26): LR & layer3 5e-06, layer4 1e-05, cbam 3e-05, head 8e-05 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,20 @@
+{
+  "variant": "sin_focal",
+  "seed": 45,
+  "spec": {
+    "cbam": [
+      "layer4"
+    ],
+    "loss": "ce",
+    "mixup": true
+  },
+  "epochs_run": 89,
+  "best_epoch": 74,
+  "best_val_f1": 0.6687329750989944,
+  "train_time_s": 19561.427799224854,
+  "sec_per_epoch": 219.7913235867961,
+  "test_infer_time_tta_s": 21.2620952129364,
+  "peak_gpu_mem_gb": 0.9662418365478516,
+  "trainable_params_final": 23645289,
+  "run_dir": "WORK_DIR/runs/sin_focal_s45"
+}

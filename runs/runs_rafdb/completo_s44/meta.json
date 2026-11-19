@@ -1,0 +1,20 @@
+{
+  "variant": "completo",
+  "seed": 44,
+  "spec": {
+    "cbam": [
+      "layer4"
+    ],
+    "loss": "focal",
+    "mixup": true
+  },
+  "epochs_run": 89,
+  "best_epoch": 74,
+  "best_val_f1": 0.6784323451113671,
+  "train_time_s": 9319.344784259796,
+  "sec_per_epoch": 104.71173914898647,
+  "test_infer_time_tta_s": 15.330286979675293,
+  "peak_gpu_mem_gb": 0.9662418365478516,
+  "trainable_params_final": 23645289,
+  "run_dir": "WORK_DIR/runs_rafdb/completo_s44"
+}

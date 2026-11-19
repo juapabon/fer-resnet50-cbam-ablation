@@ -1,0 +1,20 @@
+{
+  "variant": "cbam_layer2",
+  "seed": 45,
+  "spec": {
+    "cbam": [
+      "layer2"
+    ],
+    "loss": "focal",
+    "mixup": true
+  },
+  "epochs_run": 125,
+  "best_epoch": 110,
+  "best_val_f1": 0.6895364133394095,
+  "train_time_s": 30917.23615002632,
+  "sec_per_epoch": 247.33788920021058,
+  "test_infer_time_tta_s": 21.05374240875244,
+  "peak_gpu_mem_gb": 0.9589176177978516,
+  "trainable_params_final": 23153769,
+  "run_dir": "WORK_DIR/runs/cbam_layer2_s45"
+}

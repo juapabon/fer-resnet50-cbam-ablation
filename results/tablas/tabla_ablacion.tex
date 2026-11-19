@@ -1,0 +1,21 @@
+\begin{table}[ht]
+\centering
+\small
+\caption{Ablation study (mean $\pm$ SD over seeds). McNemar on seed-averaged TTA predictions vs. the full model, Holm-corrected.}
+\label{tab:ablation}
+\begin{tabular}{lrrrrrrr}
+\toprule
+Variant & Seeds & Acc & Macro F1 & Acc (TTA) & Macro F1 (TTA) & McNemar p (Holm) & Seeds p<0.05 \\
+\midrule
+completo & 5 & 0.673 $\pm$ 0.004 & 0.661 $\pm$ 0.008 & 0.683 $\pm$ 0.003 & 0.673 $\pm$ 0.006 & -- & -- \\
+base & 5 & 0.674 $\pm$ 0.002 & 0.668 $\pm$ 0.003 & 0.688 $\pm$ 0.005 & 0.685 $\pm$ 0.007 & 0.8308 & 1/5 \\
+sin\_cbam & 5 & 0.670 $\pm$ 0.013 & 0.649 $\pm$ 0.028 & 0.681 $\pm$ 0.010 & 0.662 $\pm$ 0.023 & 1.0000 & 2/5 \\
+sin\_focal & 5 & 0.676 $\pm$ 0.006 & 0.670 $\pm$ 0.008 & 0.690 $\pm$ 0.005 & 0.685 $\pm$ 0.008 & 0.0746 & 1/5 \\
+sin\_mixup & 5 & 0.670 $\pm$ 0.004 & 0.661 $\pm$ 0.007 & 0.681 $\pm$ 0.004 & 0.674 $\pm$ 0.003 & 1.0000 & 0/5 \\
+cbam\_layer2 & 5 & 0.674 $\pm$ 0.006 & 0.663 $\pm$ 0.011 & 0.687 $\pm$ 0.012 & 0.676 $\pm$ 0.015 & 0.0296 & 1/5 \\
+cbam\_layer3 & 5 & 0.673 $\pm$ 0.008 & 0.662 $\pm$ 0.010 & 0.682 $\pm$ 0.009 & 0.677 $\pm$ 0.011 & 0.5320 & 1/5 \\
+cbam\_layer3\_4 & 5 & 0.664 $\pm$ 0.010 & 0.653 $\pm$ 0.019 & 0.676 $\pm$ 0.010 & 0.667 $\pm$ 0.014 & 1.0000 & 3/5 \\
+cbam\_layer2\_3\_4 & 5 & 0.669 $\pm$ 0.005 & 0.664 $\pm$ 0.006 & 0.686 $\pm$ 0.007 & 0.681 $\pm$ 0.009 & 0.0639 & 1/5 \\
+\bottomrule
+\end{tabular}
+\end{table}

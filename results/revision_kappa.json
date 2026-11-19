@@ -1,0 +1,25 @@
+{
+  "pares": 120,
+  "anotador": "Jairo Rosero",
+  "kappa_3_categorias": 0.9661971830985916,
+  "kappa_binario": 1.0,
+  "acuerdo_binario_pct": 100.0,
+  "matriz": {
+    "different": {
+      "different": 69,
+      "same": 0
+    },
+    "same": {
+      "different": 0,
+      "same": 49
+    },
+    "uncertain": {
+      "different": 2,
+      "same": 0
+    }
+  },
+  "regla_articulo_con_anotador2": {
+    "precision": 1.0,
+    "sensibilidad": 0.9591836734693877
+  }
+}

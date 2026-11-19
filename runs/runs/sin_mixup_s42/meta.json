@@ -1,0 +1,20 @@
+{
+  "variant": "sin_mixup",
+  "seed": 42,
+  "spec": {
+    "cbam": [
+      "layer4"
+    ],
+    "loss": "focal",
+    "mixup": false
+  },
+  "epochs_run": 102,
+  "best_epoch": 87,
+  "best_val_f1": 0.6639011656557194,
+  "train_time_s": 22516.414195775986,
+  "sec_per_epoch": 220.74915878211752,
+  "test_infer_time_tta_s": 30.15966773033142,
+  "peak_gpu_mem_gb": 1.109825611114502,
+  "trainable_params_final": 23645289,
+  "run_dir": "WORK_DIR/runs/sin_mixup_s42"
+}

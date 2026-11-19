@@ -1,0 +1,8 @@
+Class,Train original,Train dedup,Val dedup,Test,Test with duplicate
+angry,3962,3423,470,496,82
+disgust,436,276,51,56,28
+fear,4096,3217,482,513,124
+happy,7191,6739,892,900,79
+neutral,4957,4505,610,621,77
+sad,4861,4320,588,608,81
+surprise,3201,2049,361,401,176

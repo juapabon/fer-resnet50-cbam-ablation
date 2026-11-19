@@ -1,0 +1,18 @@
+{
+  "variant": "base",
+  "seed": 45,
+  "spec": {
+    "cbam": [],
+    "loss": "ce",
+    "mixup": false
+  },
+  "epochs_run": 91,
+  "best_epoch": 76,
+  "best_val_f1": 0.6830656962722357,
+  "train_time_s": 9394.668957948685,
+  "sec_per_epoch": 103.23812041701851,
+  "test_infer_time_tta_s": 13.76769232749939,
+  "peak_gpu_mem_gb": 0.9584274291992188,
+  "trainable_params_final": 23120903,
+  "run_dir": "WORK_DIR/runs_rafdb/base_s45"
+}

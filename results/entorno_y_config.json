@@ -1,0 +1,121 @@
+{
+  "env": {
+    "python": "3.8.10",
+    "os": "Linux-4.19.0-27-amd64-x86_64-with-glibc2.10",
+    "torch": "2.4.1+cu121",
+    "torchvision": "0.19.1+cu121",
+    "cuda": "12.1",
+    "cudnn": 90100,
+    "numpy": "1.23.5",
+    "sklearn": "1.3.2",
+    "scipy": "1.10.1",
+    "pandas": "2.0.3",
+    "matplotlib": "3.7.5",
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "gpu_mem_gb": 23.6,
+    "driver": "570.153.02",
+    "cpu_count": 28,
+    "seed": 42,
+    "amp": true,
+    "cudnn_deterministic": false,
+    "smoke": false
+  },
+  "cfg": {
+    "DATA_DIR": "~/TESIS/Caras/Nuevo_dataset",
+    "train_subdir": "train",
+    "val_subdir": null,
+    "test_subdir": "test",
+    "OUT_DIR": "resultados_frontiers",
+    "WORK_DIR": "~/fer_frontiers_work",
+    "original_checkpoint": "~/TESIS/Caras/modelos_guardados/best_resnet50_cbam_focal_mixup_balanceado.pth",
+    "seed": 42,
+    "balance_train": true,
+    "GENERATED_PREFIX": "aug_",
+    "aug_out_size": 224,
+    "val_fraction": 0.1,
+    "dup_hamming": 0,
+    "remove_cross_duplicates": false,
+    "img_size": 224,
+    "batch_size": 32,
+    "max_epochs": 1000,
+    "patience": 15,
+    "min_delta": 0.0001,
+    "mixup_alpha": 0.3,
+    "mixup_prob": 1.0,
+    "focal_gamma": 2.0,
+    "weight_decay": 0.0001,
+    "plateau_factor": 0.5,
+    "plateau_patience": 4,
+    "dropout1": 0.5,
+    "dropout2": 0.4,
+    "cbam_reduction": 16,
+    "cbam_kernel": 7,
+    "stages": [
+      {
+        "start_epoch": 0,
+        "train": [
+          "cbam",
+          "head"
+        ],
+        "lr": {
+          "cbam": 0.0001,
+          "head": 0.0003
+        }
+      },
+      {
+        "start_epoch": 10,
+        "train": [
+          "layer4",
+          "cbam",
+          "head"
+        ],
+        "lr": {
+          "layer4": 1e-05,
+          "cbam": 5e-05,
+          "head": 0.0001
+        }
+      },
+      {
+        "start_epoch": 25,
+        "train": [
+          "layer3",
+          "layer4",
+          "cbam",
+          "head"
+        ],
+        "lr": {
+          "layer3": 5e-06,
+          "layer4": 1e-05,
+          "cbam": 3e-05,
+          "head": 8e-05
+        }
+      }
+    ],
+    "pretrained": true,
+    "use_amp": true,
+    "deterministic": false,
+    "num_workers": 6,
+    "clean_train_eval_n": 3000,
+    "n_bootstrap": 10000,
+    "RUN_ABLATION": false,
+    "ablation_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "ablation_variants": [
+      "completo",
+      "base",
+      "sin_cbam",
+      "sin_focal",
+      "sin_mixup",
+      "cbam_layer2",
+      "cbam_layer3",
+      "cbam_layer3_4",
+      "cbam_layer2_3_4"
+    ],
+    "retrain": false
+  }
+}

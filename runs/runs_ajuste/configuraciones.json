@@ -1,0 +1,68 @@
+{
+  "cfg01": {
+    "lr_mult": 0.5397438149926695,
+    "weight_decay": 0.0001733944572453648,
+    "dropout1": 0.4,
+    "dropout2": 0.3
+  },
+  "cfg02": {
+    "lr_mult": 0.40523782037995715,
+    "weight_decay": 0.0002740750986127027,
+    "dropout1": 0.6,
+    "dropout2": 0.3
+  },
+  "cfg03": {
+    "lr_mult": 0.5151733576857674,
+    "weight_decay": 0.0054343242201941545,
+    "dropout1": 0.4,
+    "dropout2": 0.5
+  },
+  "cfg04": {
+    "lr_mult": 1.8632434309022574,
+    "weight_decay": 8.080342487592328e-05,
+    "dropout1": 0.6,
+    "dropout2": 0.5
+  },
+  "cfg05": {
+    "lr_mult": 0.6387094449562498,
+    "weight_decay": 0.0048113326331875005,
+    "dropout1": 0.4,
+    "dropout2": 0.2
+  },
+  "cfg06": {
+    "lr_mult": 0.8863009393250982,
+    "weight_decay": 0.00048493292012911037,
+    "dropout1": 0.5,
+    "dropout2": 0.3
+  },
+  "cfg07": {
+    "lr_mult": 1.5331814803776684,
+    "weight_decay": 0.005889850157530864,
+    "dropout1": 0.3,
+    "dropout2": 0.3
+  },
+  "cfg08": {
+    "lr_mult": 0.43524017441089696,
+    "weight_decay": 4.962712423347367e-05,
+    "dropout1": 0.4,
+    "dropout2": 0.2
+  },
+  "cfg09": {
+    "lr_mult": 0.5597790187926982,
+    "weight_decay": 0.007954214686969451,
+    "dropout1": 0.3,
+    "dropout2": 0.3
+  },
+  "cfg10": {
+    "lr_mult": 0.3695126590574684,
+    "weight_decay": 0.0002578418685745412,
+    "dropout1": 0.6,
+    "dropout2": 0.4
+  },
+  "cfg11": {
+    "lr_mult": 2.3015665541786867,
+    "weight_decay": 0.0011188223065622786,
+    "dropout1": 0.6,
+    "dropout2": 0.3
+  }
+}

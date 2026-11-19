@@ -1,0 +1,71 @@
+{
+  "nuevo": 35887,
+  "ferplus": 35710,
+  "emparejadas": 35691,
+  "sin_pareja": 196,
+  "ambiguas_entre_particiones": 1425,
+  "mae_mediana": 3.455295138888889,
+  "mae_p99": 6.491840277777777,
+  "mae_max": 11.975260416666666,
+  "ferplus_sin_pareja": 19,
+  "cruce": {
+    "PrivateTest": {
+      "test": 399,
+      "train": 2789,
+      "validation": 379
+    },
+    "PublicTest": {
+      "test": 357,
+      "train": 2844,
+      "validation": 376
+    },
+    "Training": {
+      "test": 2824,
+      "train": 22904,
+      "validation": 2819
+    },
+    "sin pareja": {
+      "test": 15,
+      "train": 167,
+      "validation": 14
+    }
+  },
+  "por_clase": {
+    "PrivateTest": {
+      "angry": 485,
+      "disgust": 55,
+      "fear": 524,
+      "happy": 874,
+      "neutral": 624,
+      "sad": 589,
+      "surprise": 416
+    },
+    "PublicTest": {
+      "angry": 465,
+      "disgust": 56,
+      "fear": 492,
+      "happy": 891,
+      "neutral": 606,
+      "sad": 651,
+      "surprise": 416
+    },
+    "Training": {
+      "angry": 3971,
+      "disgust": 435,
+      "fear": 4077,
+      "happy": 7187,
+      "neutral": 4930,
+      "sad": 4792,
+      "surprise": 3155
+    },
+    "sin pareja": {
+      "angry": 32,
+      "disgust": 1,
+      "fear": 28,
+      "happy": 37,
+      "neutral": 38,
+      "sad": 45,
+      "surprise": 15
+    }
+  }
+}

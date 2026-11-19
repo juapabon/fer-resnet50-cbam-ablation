@@ -1,0 +1,18 @@
+{
+  "variant": "sin_cbam",
+  "seed": 46,
+  "spec": {
+    "cbam": [],
+    "loss": "focal",
+    "mixup": true
+  },
+  "epochs_run": 92,
+  "best_epoch": 77,
+  "best_val_f1": 0.6711974430277893,
+  "train_time_s": 19997.562382221222,
+  "sec_per_epoch": 217.3648085024046,
+  "test_infer_time_tta_s": 20.212648391723633,
+  "peak_gpu_mem_gb": 0.9584274291992188,
+  "trainable_params_final": 23120903,
+  "run_dir": "WORK_DIR/runs/sin_cbam_s46"
+}

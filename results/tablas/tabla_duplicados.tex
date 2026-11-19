@@ -1,0 +1,15 @@
+\begin{table}[ht]
+\centering
+\small
+\caption{Near-duplicate pairs across partitions (perceptual hash, Hamming distance $\leq$ 0).}
+\label{tab:duplicates}
+\begin{tabular}{lrrrrr}
+\toprule
+split\_a & split\_b & pairs & exact\_md5 & same\_label & unique\_in\_b \\
+\midrule
+train & test & 383 & 347 & 370 & 274 \\
+train & val & 442 & 403 & 418 & 310 \\
+val & test & 63 & 56 & 61 & 60 \\
+\bottomrule
+\end{tabular}
+\end{table}

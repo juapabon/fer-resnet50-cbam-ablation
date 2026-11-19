@@ -1,0 +1,18 @@
+{
+  "variant": "base",
+  "seed": 46,
+  "spec": {
+    "cbam": [],
+    "loss": "ce",
+    "mixup": false
+  },
+  "epochs_run": 86,
+  "best_epoch": 71,
+  "best_val_f1": 0.5982335557778117,
+  "train_time_s": 7471.09289932251,
+  "sec_per_epoch": 86.87317324793617,
+  "test_infer_time_tta_s": 4.781258821487427,
+  "peak_gpu_mem_gb": 0.9584274291992188,
+  "trainable_params_final": 23120903,
+  "run_dir": "WORK_DIR/runs_dedup/base_s46"
+}

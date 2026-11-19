@@ -1,0 +1,14 @@
+{
+  "train_original": 28704,
+  "removed_dup_with_val_or_test": 1752,
+  "removed_within_train_repeats": 2229,
+  "removed_label_conflict_clusters": 194,
+  "train_after": 24529,
+  "val_original": 3588,
+  "val_removed_dup_with_test": 134,
+  "val_after": 3454,
+  "test": 3595,
+  "test_with_dup_in_train_or_val": 647,
+  "test_clean": 2948,
+  "train_generated_after": 22644
+}

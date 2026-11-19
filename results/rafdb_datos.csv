@@ -1,0 +1,8 @@
+Class,Train original,Train generated,Validation,Test
+angry,634,3661,71,162
+disgust,645,3650,72,160
+fear,253,4042,28,74
+happy,4295,0,477,1185
+neutral,2271,2024,253,680
+sad,1784,2511,198,478
+surprise,1161,3134,129,329

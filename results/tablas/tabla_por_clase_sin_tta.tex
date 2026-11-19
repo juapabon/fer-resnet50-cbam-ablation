@@ -1,0 +1,19 @@
+\begin{table}[ht]
+\centering
+\small
+\caption{Per-class test metrics without TTA (one-vs-rest; Wilson 95\% intervals).}
+\label{tab:perclass-notta}
+\begin{tabular}{lrrrrrrr}
+\toprule
+Class & n & Precision [95\% CI] & Recall [95\% CI] & F1 & F2 & Type I (FPR) & Type II (FNR) \\
+\midrule
+angry & 496 & 0.614 [0.570, 0.655] & 0.621 [0.577, 0.663] & 0.617 & 0.619 & 0.063 & 0.379 \\
+disgust & 56 & 0.909 [0.764, 0.969] & 0.536 [0.407, 0.660] & 0.674 & 0.584 & 0.001 & 0.464 \\
+fear & 513 & 0.553 [0.506, 0.600] & 0.454 [0.412, 0.497] & 0.499 & 0.471 & 0.061 & 0.546 \\
+happy & 900 & 0.842 [0.817, 0.864] & 0.893 [0.871, 0.912] & 0.867 & 0.883 & 0.056 & 0.107 \\
+neutral & 621 & 0.610 [0.573, 0.646] & 0.663 [0.625, 0.700] & 0.636 & 0.652 & 0.088 & 0.337 \\
+sad & 608 & 0.511 [0.472, 0.549] & 0.544 [0.505, 0.584] & 0.527 & 0.537 & 0.106 & 0.456 \\
+surprise & 401 & 0.817 [0.774, 0.854] & 0.736 [0.690, 0.776] & 0.774 & 0.751 & 0.021 & 0.264 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this code or these results, please cite the article."
+title: "CBAM, focal loss and MixUp on ResNet-50 for FER: multi-seed ablation and near-duplicate audit (code and results)"
+authors:
+  - family-names: "Pabón Alajo"
+    given-names: "Juan Francisco"
+    affiliation: "University of Salamanca"
+  - family-names: "Curto Diego"
+    given-names: "María Belén"
+    affiliation: "University of Salamanca"
+  - family-names: "Moreno Rodilla"
+    given-names: "Vidal"
+    affiliation: "University of Salamanca"
+license: MIT
