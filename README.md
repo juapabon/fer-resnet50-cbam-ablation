@@ -4,7 +4,7 @@
 
 Code, results and per-image predictions accompanying the article
 
-> Pabón Alajo, J. F., Curto Diego, M. B., & Moreno Rodilla, V. *Do CBAM attention, focal loss and MixUp improve facial expression recognition with ResNet-50? A multi-seed ablation with a validated near-duplicate audit, deduplicated retraining and cross-dataset evaluation.* Submitted to Frontiers.
+> Anonymous authors (identities withheld during peer review). *Do CBAM attention, focal loss and MixUp improve facial expression recognition with ResNet-50? A multi-seed ablation with a validated near-duplicate audit, deduplicated retraining and cross-dataset evaluation.* Submitted to Frontiers.
 
 ## Contents
 

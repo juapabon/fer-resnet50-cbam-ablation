@@ -55,5 +55,5 @@ for f in ("particion_oficial.csv", "resumen_emparejamiento.json", "tamanos.json"
         put(W / "oficial" / f, R / "splits" / f)
 print("runs copiados:", n)
 print("tamaño:", sum(f.stat().st_size for f in R.rglob("*") if f.is_file() and ".git" not in f.parts) / 1e6, "MB")
-bad = [str(f) for f in R.rglob("*") if f.is_file() and f.suffix in TEXT and ".git" not in f.parts and "/home/jpabon" in f.read_text(errors="ignore")]
+bad = [str(f) for f in R.rglob("*") if f.is_file() and f.suffix in TEXT and ".git" not in f.parts and str(H) in f.read_text(errors="ignore")]
 print("ficheros con rutas absolutas restantes:", bad[:5])

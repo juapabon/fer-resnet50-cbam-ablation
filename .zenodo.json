@@ -2,10 +2,19 @@
   "title": "CBAM, focal loss and MixUp on ResNet-50 for facial expression recognition: multi-seed ablation and near-duplicate audit (code, results and predictions)",
   "upload_type": "software",
   "creators": [
-    {"name": "Pabón Alajo, Juan Francisco", "affiliation": "University of Salamanca"},
-    {"name": "Curto Diego, María Belén", "affiliation": "University of Salamanca"},
-    {"name": "Moreno Rodilla, Vidal", "affiliation": "University of Salamanca"}
+    {
+      "name": "Anonymous authors (for peer review)"
+    }
   ],
-  "keywords": ["facial expression recognition", "CBAM", "ResNet-50", "FER2013", "RAF-DB", "near-duplicates", "data leakage", "reproducibility"],
+  "keywords": [
+    "facial expression recognition",
+    "CBAM",
+    "ResNet-50",
+    "FER2013",
+    "RAF-DB",
+    "near-duplicates",
+    "data leakage",
+    "reproducibility"
+  ],
   "license": "MIT"
 }
