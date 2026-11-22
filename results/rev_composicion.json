@@ -1,0 +1,85 @@
+{
+  "base": {
+    "acc_full": [
+      68.8,
+      0.54
+    ],
+    "acc_clean": [
+      65.32,
+      0.6
+    ],
+    "acc_dup": [
+      84.64,
+      1.16
+    ],
+    "acc_clean_reponderada": [
+      64.4,
+      0.62
+    ],
+    "acc_dup_esperada": [
+      60.2,
+      0.72
+    ],
+    "caida": [
+      3.48,
+      0.23
+    ],
+    "caida_composicion": [
+      -0.92,
+      0.04
+    ],
+    "caida_intra_clase": [
+      4.4,
+      0.25
+    ],
+    "p_intra_clase": 2.420008282458317e-06
+  },
+  "completo": {
+    "acc_full": [
+      68.27,
+      0.31
+    ],
+    "acc_clean": [
+      65.22,
+      0.31
+    ],
+    "acc_dup": [
+      82.16,
+      0.93
+    ],
+    "acc_clean_reponderada": [
+      64.3,
+      0.39
+    ],
+    "acc_dup_esperada": [
+      60.11,
+      0.84
+    ],
+    "caida": [
+      3.05,
+      0.17
+    ],
+    "caida_composicion": [
+      -0.92,
+      0.1
+    ],
+    "caida_intra_clase": [
+      3.97,
+      0.2
+    ],
+    "p_intra_clase": 1.4702445594257159e-06
+  },
+  "kappa": {
+    "n": 120,
+    "kappa_3": 0.9661971830985916,
+    "kappa_3_ic95": [
+      0.9164112566174422,
+      1.0
+    ],
+    "acuerdo_binario": "120/120",
+    "acuerdo_binario_ic95_cp": [
+      0.9697270274225799,
+      1.0
+    ]
+  }
+}
