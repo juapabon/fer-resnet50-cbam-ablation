@@ -1,0 +1,20 @@
+{
+  "variant": "completo",
+  "seed": 45,
+  "spec": {
+    "cbam": [
+      "layer4"
+    ],
+    "loss": "focal",
+    "mixup": true
+  },
+  "epochs_run": 111,
+  "best_epoch": 96,
+  "best_val_f1": 0.6596185058854921,
+  "train_time_s": 19720.733813285828,
+  "sec_per_epoch": 177.6642685881606,
+  "test_infer_time_tta_s": 20.555219650268555,
+  "peak_gpu_mem_gb": 0.9662418365478516,
+  "trainable_params_final": 23645289,
+  "run_dir": "WORK_DIR/runs_oficial/completo_s45"
+}

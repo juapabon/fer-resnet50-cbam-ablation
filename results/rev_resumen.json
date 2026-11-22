@@ -1,0 +1,17 @@
+{
+  "mejor_cfg": "cfg07",
+  "mejor_cfg_param": {
+    "lr_mult": 1.5331814803776684,
+    "weight_decay": 0.005889850157530864,
+    "dropout1": 0.3,
+    "dropout2": 0.3
+  },
+  "n_runs": 50,
+  "horas_gpu": 221.66504108236896,
+  "tamanos_oficial": {
+    "Training": 28547,
+    "PublicTest": 3577,
+    "PrivateTest": 3567,
+    "Training_generadas": 21762
+  }
+}

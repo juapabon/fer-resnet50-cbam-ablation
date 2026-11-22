@@ -11,7 +11,7 @@ Code, results and per-image predictions accompanying the article
 | Folder | What it contains |
 |---|---|
 | `code/` | The experiment notebook (`FER_ResNet50_CBAM_Frontiers.ipynb`) and its executed copy; `queues/` and `revision/` hold the scripts that ran the training runs in parallel on one RTX 3090 |
-| `results/` | Every table and figure of the article, the CSV/JSON summaries, the near-duplicate lists (`test_con_duplicado_regla.csv`, `duplicados_*.csv`), the 360 manually reviewed pairs with their verdicts (`revision_duplicados_muestra.csv`) and the split-half validation of the decision rule |
+| `results/` | Every table and figure of the article, the CSV/JSON summaries, the near-duplicate lists (`test_con_duplicado_regla.csv`, `test_con_duplicado_regla10.csv` for the permissive rule, `oficial_test_con_duplicado_regla.csv` for the official PrivateTest, `duplicados_*.csv`), the analysis of the review experiments (`rev_*.csv`, `rev_*.json`), the 360 manually reviewed pairs with their verdicts (`revision_duplicados_muestra.csv`) and the split-half validation of the decision rule |
 | `runs/<group>/<variant>_s<seed>/` | For every training run: `meta.json` (configuration, epochs, time), `history.json` (per-epoch metrics) and `preds_test.csv` (per-image test probabilities, with and without TTA) |
 | `splits/` | The official FER2013 split (Training / PublicTest / PrivateTest) reconstructed for this copy by pixel matching against FERPlus, with the FERPlus index of every image |
 

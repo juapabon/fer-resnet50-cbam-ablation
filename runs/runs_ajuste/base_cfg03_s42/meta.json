@@ -1,0 +1,18 @@
+{
+  "variant": "base_cfg03",
+  "seed": 42,
+  "spec": {
+    "cbam": [],
+    "loss": "ce",
+    "mixup": false
+  },
+  "epochs_run": 113,
+  "best_epoch": 98,
+  "best_val_f1": 0.6657496500683294,
+  "train_time_s": 19189.064714431763,
+  "sec_per_epoch": 169.81473198612179,
+  "test_infer_time_tta_s": 21.273460388183594,
+  "peak_gpu_mem_gb": 1.1020112037658691,
+  "trainable_params_final": 23120903,
+  "run_dir": "WORK_DIR/runs_ajuste/base_cfg03_s42"
+}

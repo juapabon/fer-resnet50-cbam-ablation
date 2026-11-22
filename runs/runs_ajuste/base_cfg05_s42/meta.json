@@ -1,0 +1,18 @@
+{
+  "variant": "base_cfg05",
+  "seed": 42,
+  "spec": {
+    "cbam": [],
+    "loss": "ce",
+    "mixup": false
+  },
+  "epochs_run": 109,
+  "best_epoch": 94,
+  "best_val_f1": 0.6731881302166765,
+  "train_time_s": 18637.545783758163,
+  "sec_per_epoch": 170.98665856658866,
+  "test_infer_time_tta_s": 15.96241569519043,
+  "peak_gpu_mem_gb": 0.9584274291992188,
+  "trainable_params_final": 23120903,
+  "run_dir": "WORK_DIR/runs_ajuste/base_cfg05_s42"
+}

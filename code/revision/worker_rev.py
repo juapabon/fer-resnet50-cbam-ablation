@@ -12,7 +12,7 @@ Grupos, en orden de prioridad (todos con el protocolo y los hiperparámetros del
 
 Uso: python worker_rev.py <id> [--prep | --pending]
 """
-import copy, json, os, sys, time, traceback
+import copy, fcntl, json, os, sys, time, traceback
 from contextlib import contextmanager
 from pathlib import Path
 import numpy as np
@@ -91,6 +91,7 @@ import torch, pandas as pd
 CFG, VARIANTS = g["CFG"], g["VARIANTS"]
 CFG0 = copy.deepcopy(CFG)
 WORK = g["WORK"]
+exec(compile(open(W / "tmp" / "rev" / "train_run_reanudable.py").read(), "train_run_reanudable.py", "exec"), g)
 
 @contextmanager
 def data_context(**kw):
@@ -167,15 +168,27 @@ def configure(grp, variant):
         CFG["stages"] = copy.deepcopy(STAGES_FT)
 
 # ---------- bucle de trabajos ----------
-CLAIMS.mkdir(parents=True, exist_ok=True)
+# Cada run se reserva con flock sobre <run>/.lock: el sistema lo libera si el proceso muere (caída o reinicio),
+# así que la run interrumpida queda libre y el siguiente worker la continúa desde last.pth.
+def take(grp, v, s):
+    d = CTX[grp]["RUNS_DIR"] / f"{v}_s{s}"
+    d.mkdir(parents=True, exist_ok=True)
+    f = open(d / ".lock", "a")
+    try:
+        fcntl.flock(f, fcntl.LOCK_EX | fcntl.LOCK_NB)
+    except BlockingIOError:
+        f.close(); return None
+    if (d / "meta.json").exists():
+        f.close(); return None
+    return f
+
+failed = set()   # runs que fallaron en este proceso: se reintentan en la siguiente ronda del lanzador
 while True:
     J, blocked = jobs()
-    job = None
-    for grp, v, s in J:
-        try:
-            os.mkdir(CLAIMS / f"{grp}__{v}_s{s}"); job = (grp, v, s); break
-        except FileExistsError:
-            continue
+    job = lock = None
+    for jb in J:
+        if jb not in failed and (lock := take(*jb)):
+            job = jb; break
     if job is None:
         if blocked:
             time.sleep(300); continue
@@ -186,12 +199,14 @@ while True:
     try:
         configure(grp, v)
         with data_context(**CTX[grp]):
-            m = g["train_run"](v, s, verbose=True)
+            m = g["train_run_reanudable"](v, s, verbose=True)
         log(f"fin {grp} {v} s{s}: {m['epochs_run']} épocas, mejor {m['best_epoch']}, F1 val {m['best_val_f1']:.4f}, "
             f"{(time.time() - t0) / 3600:.2f} h")
     except Exception:
+        failed.add(job)
         log(f"ERROR {grp} {v} s{s}\n{traceback.format_exc()}")
         torch.cuda.empty_cache()
     finally:
         configure("", "")
+        lock.close()
 log("sin trabajos pendientes")

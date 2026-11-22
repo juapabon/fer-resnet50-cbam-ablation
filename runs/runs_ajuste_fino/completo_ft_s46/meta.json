@@ -1,0 +1,21 @@
+{
+  "variant": "completo_ft",
+  "seed": 46,
+  "spec": {
+    "cbam": [
+      "layer4"
+    ],
+    "loss": "focal",
+    "mixup": true
+  },
+  "epochs_run": 77,
+  "best_epoch": 62,
+  "best_val_f1": 0.6862871692771265,
+  "train_time_s": 12428.5527780056,
+  "sec_per_epoch": 161.40977633773505,
+  "test_infer_time_tta_s": 5.056391716003418,
+  "peak_gpu_mem_gb": 1.709989070892334,
+  "trainable_params_final": 25090217,
+  "run_dir": "WORK_DIR/runs_ajuste_fino/completo_ft_s46",
+  "reanudada_tras_epocas": []
+}

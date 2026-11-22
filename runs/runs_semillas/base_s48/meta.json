@@ -1,0 +1,18 @@
+{
+  "variant": "base",
+  "seed": 48,
+  "spec": {
+    "cbam": [],
+    "loss": "ce",
+    "mixup": false
+  },
+  "epochs_run": 85,
+  "best_epoch": 70,
+  "best_val_f1": 0.6747471354437212,
+  "train_time_s": 14481.364185333252,
+  "sec_per_epoch": 170.36899041568532,
+  "test_infer_time_tta_s": 16.370874643325806,
+  "peak_gpu_mem_gb": 0.9584274291992188,
+  "trainable_params_final": 23120903,
+  "run_dir": "WORK_DIR/runs_semillas/base_s48"
+}

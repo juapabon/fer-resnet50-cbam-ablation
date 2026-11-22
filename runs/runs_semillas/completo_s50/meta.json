@@ -1,0 +1,21 @@
+{
+  "variant": "completo",
+  "seed": 50,
+  "spec": {
+    "cbam": [
+      "layer4"
+    ],
+    "loss": "focal",
+    "mixup": true
+  },
+  "epochs_run": 93,
+  "best_epoch": 78,
+  "best_val_f1": 0.6482892683051558,
+  "train_time_s": 16432.719502925873,
+  "sec_per_epoch": 176.69590863361154,
+  "test_infer_time_tta_s": 23.75445818901062,
+  "peak_gpu_mem_gb": 1.109825611114502,
+  "trainable_params_final": 23645289,
+  "run_dir": "WORK_DIR/runs_semillas/completo_s50",
+  "reanudada_tras_epocas": []
+}

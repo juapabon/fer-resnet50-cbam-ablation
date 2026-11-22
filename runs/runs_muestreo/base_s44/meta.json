@@ -1,0 +1,18 @@
+{
+  "variant": "base",
+  "seed": 44,
+  "spec": {
+    "cbam": [],
+    "loss": "ce",
+    "mixup": false
+  },
+  "epochs_run": 69,
+  "best_epoch": 54,
+  "best_val_f1": 0.6774828616643326,
+  "train_time_s": 11449.691832780838,
+  "sec_per_epoch": 165.9375627939252,
+  "test_infer_time_tta_s": 16.371057748794556,
+  "peak_gpu_mem_gb": 0.9584269523620605,
+  "trainable_params_final": 23120903,
+  "run_dir": "WORK_DIR/runs_muestreo/base_s44"
+}
