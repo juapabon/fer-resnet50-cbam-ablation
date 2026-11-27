@@ -3,7 +3,7 @@ from contextlib import contextmanager
 
 # RAF-DB oficial (subconjunto básico): EmoLabel/list_patition_label.txt + Image/aligned/*_aligned.jpg (100x100).
 # También acepta carpetas train/<clase>/ y test/<clase>/ con nombres de clase o con los códigos 1-7 de RAF-DB.
-RAF_DIR = Path(os.environ.get("FER_RAFDB_DIR", "/home/jpabon/TESIS/datasets_emociones/RAF-DB"))
+RAF_DIR = Path(os.environ.get("FER_RAFDB_DIR", str(Path.home() / "datasets/RAF-DB")))
 RAF_VARIANTS, RAF_SEEDS = ["completo", "base"], CFG["ablation_seeds"]
 RUNS_RAF = WORK / "runs_rafdb"
 RAF_CODE = {1: "surprise", 2: "fear", 3: "disgust", 4: "happy", 5: "sad", 6: "angry", 7: "neutral"}
