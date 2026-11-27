@@ -1,0 +1,19 @@
+{
+  "variant": "base",
+  "seed": 42,
+  "spec": {
+    "cbam": [],
+    "loss": "ce",
+    "mixup": false
+  },
+  "epochs_run": 118,
+  "best_epoch": 103,
+  "best_val_f1": 0.6961592744874796,
+  "train_time_s": 12258.779670476913,
+  "sec_per_epoch": 103.88796330912639,
+  "test_infer_time_tta_s": 17.004131317138672,
+  "peak_gpu_mem_gb": 1.0101699829101562,
+  "trainable_params_final": 23120903,
+  "run_dir": "WORK_DIR/runs_rafdb_color/base_s42",
+  "reanudada_tras_epocas": []
+}

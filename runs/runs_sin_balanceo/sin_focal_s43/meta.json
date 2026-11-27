@@ -1,0 +1,21 @@
+{
+  "variant": "sin_focal",
+  "seed": 43,
+  "spec": {
+    "cbam": [
+      "layer4"
+    ],
+    "loss": "ce",
+    "mixup": true
+  },
+  "epochs_run": 81,
+  "best_epoch": 66,
+  "best_val_f1": 0.6375738887993075,
+  "train_time_s": 8622.941809892654,
+  "sec_per_epoch": 106.45607172706981,
+  "test_infer_time_tta_s": 17.505321502685547,
+  "peak_gpu_mem_gb": 0.9662418365478516,
+  "trainable_params_final": 23645289,
+  "run_dir": "WORK_DIR/runs_sin_balanceo/sin_focal_s43",
+  "reanudada_tras_epocas": []
+}

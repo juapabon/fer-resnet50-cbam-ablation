@@ -1,0 +1,19 @@
+{
+  "variant": "base_ft",
+  "seed": 43,
+  "spec": {
+    "cbam": [],
+    "loss": "ce",
+    "mixup": false
+  },
+  "epochs_run": 41,
+  "best_epoch": 26,
+  "best_val_f1": 0.6873265362882754,
+  "train_time_s": 11812.046417713165,
+  "sec_per_epoch": 288.09869311495527,
+  "test_infer_time_tta_s": 16.599560976028442,
+  "peak_gpu_mem_gb": 1.674912929534912,
+  "trainable_params_final": 24565831,
+  "run_dir": "WORK_DIR/runs_ft_ablacion/base_ft_s43",
+  "reanudada_tras_epocas": []
+}

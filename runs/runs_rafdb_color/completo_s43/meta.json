@@ -1,0 +1,21 @@
+{
+  "variant": "completo",
+  "seed": 43,
+  "spec": {
+    "cbam": [
+      "layer4"
+    ],
+    "loss": "focal",
+    "mixup": true
+  },
+  "epochs_run": 93,
+  "best_epoch": 78,
+  "best_val_f1": 0.6902176937063726,
+  "train_time_s": 9873.85817027092,
+  "sec_per_epoch": 106.17051795990237,
+  "test_infer_time_tta_s": 17.04222583770752,
+  "peak_gpu_mem_gb": 1.017984390258789,
+  "trainable_params_final": 23645289,
+  "run_dir": "WORK_DIR/runs_rafdb_color/completo_s43",
+  "reanudada_tras_epocas": []
+}

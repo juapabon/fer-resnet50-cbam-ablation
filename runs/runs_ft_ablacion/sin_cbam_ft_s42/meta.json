@@ -1,0 +1,19 @@
+{
+  "variant": "sin_cbam_ft",
+  "seed": 42,
+  "spec": {
+    "cbam": [],
+    "loss": "focal",
+    "mixup": true
+  },
+  "epochs_run": 72,
+  "best_epoch": 57,
+  "best_val_f1": 0.6936027152400365,
+  "train_time_s": 20563.62971830368,
+  "sec_per_epoch": 285.60596830977335,
+  "test_infer_time_tta_s": 23.446694135665894,
+  "peak_gpu_mem_gb": 1.6928577423095703,
+  "trainable_params_final": 24565831,
+  "run_dir": "WORK_DIR/runs_ft_ablacion/sin_cbam_ft_s42",
+  "reanudada_tras_epocas": []
+}

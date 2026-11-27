@@ -1,0 +1,21 @@
+{
+  "variant": "completo_cnx",
+  "seed": 46,
+  "spec": {
+    "cbam": [
+      "layer4"
+    ],
+    "loss": "focal",
+    "mixup": true
+  },
+  "epochs_run": 58,
+  "best_epoch": 43,
+  "best_val_f1": 0.6809089287439191,
+  "train_time_s": 11685.059580087662,
+  "sec_per_epoch": 201.46654448427003,
+  "test_infer_time_tta_s": 20.244658708572388,
+  "peak_gpu_mem_gb": 1.1235027313232422,
+  "trainable_params_final": 27057257,
+  "run_dir": "WORK_DIR/runs_convnext/completo_cnx_s46",
+  "reanudada_tras_epocas": []
+}

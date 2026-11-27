@@ -1,0 +1,21 @@
+{
+  "variant": "cbam_layer2",
+  "seed": 46,
+  "spec": {
+    "cbam": [
+      "layer2"
+    ],
+    "loss": "focal",
+    "mixup": true
+  },
+  "epochs_run": 103,
+  "best_epoch": 88,
+  "best_val_f1": 0.6816719360500219,
+  "train_time_s": 20297.444625377655,
+  "sec_per_epoch": 197.06256917842384,
+  "test_infer_time_tta_s": 18.078251838684082,
+  "peak_gpu_mem_gb": 0.9589176177978516,
+  "trainable_params_final": 23153769,
+  "run_dir": "WORK_DIR/runs_oficial/cbam_layer2_s46",
+  "reanudada_tras_epocas": []
+}

@@ -1,0 +1,19 @@
+{
+  "variant": "base_cnx",
+  "seed": 45,
+  "spec": {
+    "cbam": [],
+    "loss": "ce",
+    "mixup": false
+  },
+  "epochs_run": 81,
+  "best_epoch": 66,
+  "best_val_f1": 0.6897095660525412,
+  "train_time_s": 16503.706362724304,
+  "sec_per_epoch": 203.7494612682013,
+  "test_infer_time_tta_s": 10.552804946899414,
+  "peak_gpu_mem_gb": 1.1224021911621094,
+  "trainable_params_final": 26983431,
+  "run_dir": "WORK_DIR/runs_convnext/base_cnx_s45",
+  "reanudada_tras_epocas": []
+}

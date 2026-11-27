@@ -1,0 +1,21 @@
+{
+  "variant": "completo",
+  "seed": 43,
+  "spec": {
+    "cbam": [
+      "layer4"
+    ],
+    "loss": "focal",
+    "mixup": true
+  },
+  "epochs_run": 98,
+  "best_epoch": 83,
+  "best_val_f1": 0.5926875737231867,
+  "train_time_s": 10573.589515447617,
+  "sec_per_epoch": 107.89377056579201,
+  "test_infer_time_tta_s": 16.548245668411255,
+  "peak_gpu_mem_gb": 0.9662418365478516,
+  "trainable_params_final": 23645289,
+  "run_dir": "WORK_DIR/runs_sin_balanceo/completo_s43",
+  "reanudada_tras_epocas": []
+}

@@ -1,0 +1,21 @@
+{
+  "variant": "sin_mixup_ft",
+  "seed": 44,
+  "spec": {
+    "cbam": [
+      "layer4"
+    ],
+    "loss": "focal",
+    "mixup": false
+  },
+  "epochs_run": 57,
+  "best_epoch": 42,
+  "best_val_f1": 0.6834792980849909,
+  "train_time_s": 16520.382598400116,
+  "sec_per_epoch": 289.8312736561424,
+  "test_infer_time_tta_s": 18.539695262908936,
+  "peak_gpu_mem_gb": 1.6920442581176758,
+  "trainable_params_final": 25090217,
+  "run_dir": "WORK_DIR/runs_ft_ablacion/sin_mixup_ft_s44",
+  "reanudada_tras_epocas": []
+}
